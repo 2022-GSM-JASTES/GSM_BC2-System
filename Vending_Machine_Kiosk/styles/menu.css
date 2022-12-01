@@ -139,3 +139,17 @@ body {
     opacity: 1;
     text-align: left;
 }
+.back_button {
+    width: 128px;
+    height: 50px;
+    background: rgba(0,124,190,1);
+    opacity: 1;
+    position: absolute;
+    top: 42px;
+    left: 70px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    overflow: hidden;
+  }
