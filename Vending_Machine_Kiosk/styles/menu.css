@@ -153,3 +153,33 @@ body {
     border-bottom-right-radius: 30px;
     overflow: hidden;
   }
+  .modal_background {
+    width: 650px;
+    height: 350px;
+    background: rgba(213,230,233,1);
+    opacity: 1;
+    position: absolute;
+    top: 65px;
+    left: 75px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    overflow: hidden;
+  }
+  .modal_close {
+    width: 21px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 93px;
+    left: 664px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 32px;
+    opacity: 1;
+    text-align: center;
+  }
+  .modal_frame
+  {
+    display: none;
+  }
