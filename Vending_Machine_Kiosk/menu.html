@@ -8,13 +8,31 @@
     <body>
         <div class="frame">
           <span class="title">MENU</span>
-          <div class="choose1"></div>
-          <div class="snack1"></div>
+          <a id="modal_btn">
+            <div class="choose1"></div>
+            <div class="snack1"></div>
+          </a>
           <div class="choose2"></div>
           <div class="choose3"></div>
           <div class="snack2"></div>
           <div class="snack3"></div>
           <a href="index.html"><div class="back_button"></div><span class="back">Back</span></a>
+          <div class="modal_frame">
+            <div class="modal_background"></div>
+            <span class="modal_close"><a id="modal_close">X</a></span>
+          </div>
         </div>
     </body>
 </html>
+<script>
+    window.onload = function() {
+        function onClick() {
+            document.querySelector('.modal_frame').style.display = 'block';
+        }
+        function offClick() {
+            document.querySelector('.modal_frame').style.display = 'none';
+        }
+        document.getElementById('modal_btn').addEventListener('click', onClick);
+        document.getElementById('modal_close').addEventListener('click', offClick);
+    };
+</script>
