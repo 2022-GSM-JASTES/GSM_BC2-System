@@ -40,27 +40,13 @@
     text-align: left;
   }
   .button_1 {
-    width: 310px;
+    width: 500px;
     height: 80px;
     background: rgba(0,95,145,1);
     opacity: 1;
     position: absolute;
-    top: 318px;
-    left: 47px;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    overflow: hidden;
-  }
-  .button_2 {
-    width: 310px;
-    height: 80px;
-    background: rgba(72,175,228,1);
-    opacity: 1;
-    position: absolute;
-    top: 318px;
-    left: 443px;
+    top: 333px;
+    left: 150px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     border-bottom-left-radius: 30px;
@@ -71,20 +57,8 @@
     width: 105px;
     color: rgba(255,255,255,1);
     position: absolute;
-    top: 333px;
-    left: 150px;
-    font-family: Noto Sans KR;
-    font-weight: Medium;
-    font-size: 36px;
-    opacity: 1;
-    text-align: left;
-  }
-  .HELP {
-    width: 92px;
-    color: rgba(255,255,255,1);
-    position: absolute;
-    top: 333px;
-    left: 552px;
+    top: 348px;
+    left: 347px;
     font-family: Noto Sans KR;
     font-weight: Medium;
     font-size: 36px;
