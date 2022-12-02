@@ -31,22 +31,22 @@
     width: 567px;
     color: rgba(0,51,101,1);
     position: absolute;
-    top: 161px;
-    left: 47px;
-    font-family: Noto Sans KR;
+    top: 150px;
+    left: 44px;
+    font-family: Pretendard;
     font-weight: Bold;
-    font-size: 48px;
+    font-size: 55px;
     opacity: 1;
     text-align: left;
   }
   .button_1 {
-    width: 500px;
+    width: 712px;
     height: 80px;
     background: rgba(0,95,145,1);
     opacity: 1;
     position: absolute;
     top: 333px;
-    left: 150px;
+    left: 44px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     border-bottom-left-radius: 30px;
@@ -54,13 +54,13 @@
     overflow: hidden;
   }
   .MENU {
-    width: 105px;
+    width: 103px;
     color: rgba(255,255,255,1);
     position: absolute;
     top: 348px;
-    left: 347px;
-    font-family: Noto Sans KR;
-    font-weight: Medium;
+    left: 349px;
+    font-family: Pretendard;
+    font-weight: Regular;
     font-size: 36px;
     opacity: 1;
     text-align: left;
