@@ -7,7 +7,7 @@
   .frame {
     width: 800px;
     height: 480px;
-    background: rgba(255,255,255,1);
+    background: rgba(97,107,195,1);
     opacity: 1;
     position: absolute;
     top: 0px;
@@ -15,38 +15,38 @@
     overflow: hidden;
   }
   .logo {
-    width: 158px;
-    height: 96px;
+    width: 479px;
+    height: 291px;
     background: url("../image/GSM.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    opacity: 1;
+    opacity: 0.15000000596046448;
     position: absolute;
-    top: 32px;
-    left: 44px;
+    top: 95px;
+    left: 160px;
     overflow: hidden;
   }
   .title {
-    width: 567px;
-    color: rgba(0,51,101,1);
+    width: 405px;
+    color: rgba(255,255,255,1);
     position: absolute;
-    top: 150px;
-    left: 44px;
+    top: 62px;
+    left: 51px;
     font-family: Pretendard;
     font-weight: Bold;
-    font-size: 55px;
+    font-size: 70px;
     opacity: 1;
     text-align: left;
   }
   .button_1 {
-    width: 712px;
+    width: 699px;
     height: 80px;
-    background: rgba(0,95,145,1);
+    background: rgba(255,255,255,1);
     opacity: 1;
     position: absolute;
-    top: 333px;
-    left: 44px;
+    top: 334px;
+    left: 51px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     border-bottom-left-radius: 30px;
@@ -55,12 +55,12 @@
   }
   .MENU {
     width: 103px;
-    color: rgba(255,255,255,1);
+    color: rgba(98,108,195,1);
     position: absolute;
-    top: 348px;
-    left: 349px;
+    top: 349px;
+    left: 348px;
     font-family: Pretendard;
-    font-weight: Regular;
+    font-weight: Medium;
     font-size: 36px;
     opacity: 1;
     text-align: left;
