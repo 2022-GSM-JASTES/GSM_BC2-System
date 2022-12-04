@@ -125,6 +125,42 @@ body {
   border: 0px solid rgba(0,0,0,1);
   overflow: hidden;
 }
+.price1 {
+  width: 74px;
+  color: rgba(98,108,195,1);
+  position: absolute;
+  top: 355px;
+  left: 140px;
+  font-family: Pretendard;
+  font-weight: Medium;
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+}
+.price2 {
+  width: 74px;
+  color: rgba(98,108,195,1);
+  position: absolute;
+  top: 355px;
+  left: 399px;
+  font-family: Pretendard;
+  font-weight: Medium;
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+}
+.price3 {
+  width: 74px;
+  color: rgba(98,108,195,1);
+  position: absolute;
+  top: 355px;
+  left: 660px;
+  font-family: Pretendard;
+  font-weight: Medium;
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+}
 .back {
     width: 57px;
     color: rgba(255,255,255,1);
