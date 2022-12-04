@@ -4,29 +4,29 @@
 }
 
 body {
-    font-size: 14px;
+  font-size: 14px;
 }
 .frame {
-    width: 800px;
-    height: 480px;
-    background: rgba(255,255,255,1);
-    opacity: 1;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    overflow: hidden;
+  width: 800px;
+  height: 480px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
 }
 .title {
-    width: 70px;
-    color: rgba(98,108,195,1);
-    position: absolute;
-    top: 17px;
-    left: 365px;
-    font-family: Pretendard;
-    font-weight: Bold;
-    font-size: 35px;
-    opacity: 1;
-    text-align: left;
+  width: 70px;
+  color: rgba(98,108,195,1);
+  position: absolute;
+  top: 17px;
+  left: 365px;
+  font-family: Pretendard;
+  font-weight: Bold;
+  font-size: 35px;
+  opacity: 1;
+  text-align: left;
 }
 .title_Line {
   width: 800px;
@@ -161,59 +161,33 @@ body {
   opacity: 1;
   text-align: left;
 }
-.back {
-    width: 57px;
-    color: rgba(255,255,255,1);
-    position: absolute;
-    top: 50px;
-    left: 106px;
-    font-family: Noto Sans KR;
-    font-weight: Medium;
-    font-size: 24px;
-    opacity: 1;
-    text-align: left;
+.modal_background {
+  width: 650px;
+  height: 350px;
+  background: rgba(213,230,233,1);
+  opacity: 1;
+  position: absolute;
+  top: 65px;
+  left: 75px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  overflow: hidden;
 }
-.back_button {
-    width: 128px;
-    height: 50px;
-    background: rgba(0,124,190,1);
-    opacity: 1;
-    position: absolute;
-    top: 42px;
-    left: 70px;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    overflow: hidden;
-  }
-  .modal_background {
-    width: 650px;
-    height: 350px;
-    background: rgba(213,230,233,1);
-    opacity: 1;
-    position: absolute;
-    top: 65px;
-    left: 75px;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    overflow: hidden;
-  }
-  .modal_close {
-    width: 21px;
-    color: rgba(0,0,0,1);
-    position: absolute;
-    top: 93px;
-    left: 664px;
-    font-family: Inter;
-    font-weight: Regular;
-    font-size: 32px;
-    opacity: 1;
-    text-align: center;
-  }
-  .modal_frame
-  {
-    display: none;
-  }
+.modal_close {
+  width: 21px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 93px;
+  left: 664px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 32px;
+  opacity: 1;
+  text-align: center;
+}
+.modal_frame
+{
+  display: none;
+}
