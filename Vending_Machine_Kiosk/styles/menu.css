@@ -162,26 +162,26 @@ body {
   text-align: left;
 }
 .modal_background {
-  width: 650px;
+  width: 700px;
   height: 350px;
-  background: rgba(213,230,233,1);
+  background: rgba(255,255,255,1);
   opacity: 1;
   position: absolute;
   top: 65px;
-  left: 75px;
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
+  left: 50px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   overflow: hidden;
 }
 .modal_close {
-  width: 21px;
+  width: 20px;
   color: rgba(0,0,0,1);
   position: absolute;
-  top: 93px;
-  left: 664px;
-  font-family: Inter;
+  top: 83px;
+  left: 705px;
+  font-family: Pretendard;
   font-weight: Regular;
   font-size: 32px;
   opacity: 1;
