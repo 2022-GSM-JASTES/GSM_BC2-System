@@ -5,7 +5,7 @@
         <link href="styles/menu.css" rel="stylesheet">
     </head>
     <body>
-        <div class="frame">
+        <div id="frame" class="frame">
           <span class="title">BC2</span>
           <div class="title_Line"></div>
           <a id="modal_btn">
@@ -31,9 +31,11 @@
     window.onload = function() {
         function onClick() {
             document.querySelector('.modal_frame').style.display = 'block';
+            document.getElementById('frame').style.background = 'rgba(177,177,177,1)';
         }
         function offClick() {
             document.querySelector('.modal_frame').style.display = 'none';
+            document.getElementById('frame').style.background = 'rgba(255,255,255,1)';
         }
         document.getElementById('modal_btn').addEventListener('click', onClick);
         document.getElementById('modal_close').addEventListener('click', offClick);
