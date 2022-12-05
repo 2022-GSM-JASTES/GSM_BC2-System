@@ -3,6 +3,7 @@ window.onload = function() {
         document.querySelector('.modal_frame').style.display = 'block';
         document.getElementById('frame').style.background = 'rgba(177,177,177,1)';
         document.getElementById('cnt').innerText = 1; //reset Cnt
+        totalPrice();
     }
     function offClick() {
         document.querySelector('.modal_frame').style.display = 'none';
@@ -17,9 +18,9 @@ window.onload = function() {
         }
         else{
             num = parseInt(num) + 1;
-            cnt.innerText = num; 
+            cnt.innerText = num;
+            totalPrice();
         }
-        
     }
     function minusCnt(){
         const cnt = document.getElementById('cnt');
@@ -30,9 +31,17 @@ window.onload = function() {
         }
         else{
             num = parseInt(num) - 1;
-            cnt.innerText = num; 
+            cnt.innerText = num;
+            totalPrice();
         }
-        
+    }
+    function totalPrice(){
+        let cnt = document.getElementById('cnt').innerText;
+
+        const price = 1500 * cnt;
+        const total_price = price.toLocaleString();
+
+        document.getElementById('total_price').innerText = "₩" + total_price; 
     }
     document.getElementById('plus').addEventListener('click', plusCnt);
     document.getElementById('minus').addEventListener('click', minusCnt);
