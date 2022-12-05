@@ -198,3 +198,134 @@ body {
 {
   display: none;
 }
+.payment_text {
+  width: 70px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 278px;
+  left: 470px;
+  font-family: Pretendard;
+  font-weight: Bold;
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+}
+.payment_btn {
+  width: 220px;
+  height: 59px;
+  background: rgba(98,108,195,1);
+  opacity: 1;
+  position: absolute;
+  top: 261px;
+  left: 395px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+}
+.minus_btn {
+  width: 30px;
+  height: 30px;
+  background: rgba(98,108,195,1);
+  opacity: 1;
+  position: absolute;
+  top: 183px;
+  left: 399px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow: hidden;
+}
+.plus_btn {
+  width: 30px;
+  height: 30px;
+  background: rgba(98,108,195,1);
+  opacity: 1;
+  position: absolute;
+  top: 183px;
+  left: 464px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow: hidden;
+}
+.cnt {
+  width: 10px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 185px;
+  left: 442px;
+  font-family: Pretendard;
+  font-weight: Bold;
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+}
+.Total_price {
+  width: 74px;
+  color: rgba(98,108,195,1);
+  position: absolute;
+  top: 225px;
+  left: 399px;
+  font-family: Pretendard;
+  font-weight: Medium;
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+}
+.modal_snack_frame {
+  width: 145px;
+  height: 200px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 119px;
+  left: 184px;
+  border: 2px solid rgba(0,0,0,1);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow: hidden;
+}
+.modal_snack {
+  width: 100px;
+  height: 166px;
+  background: url("../image/치킨팝.jpeg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 136px;
+  left: 206px;
+  border: 0px solid rgba(0,0,0,1);
+  overflow: hidden;
+}
+.snack_name {
+  width: 83px;
+  color: rgba(98,108,195,1);
+  position: absolute;
+  top: 125px;
+  left: 395px;
+  font-family: Pretendard;
+  font-weight: Medium;
+  font-size: 32px;
+  opacity: 1;
+  text-align: left;
+}
+.minus {
+  position: absolute;
+  top: 192px;
+  left: 408px;
+  color: white;
+}
+.plus {
+  position: absolute;
+  top: 191px;
+  left: 473px;
+  color: white;
+}
