@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <link href="styles/menu.css" rel="stylesheet">
+        <script src="script/script.js"></script>
     </head>
     <body>
         <div id="frame" class="frame">
@@ -27,17 +28,3 @@
         </div>
     </body>
 </html>
-<script>
-    window.onload = function() {
-        function onClick() {
-            document.querySelector('.modal_frame').style.display = 'block';
-            document.getElementById('frame').style.background = 'rgba(177,177,177,1)';
-        }
-        function offClick() {
-            document.querySelector('.modal_frame').style.display = 'none';
-            document.getElementById('frame').style.background = 'rgba(255,255,255,1)';
-        }
-        document.getElementById('modal_btn').addEventListener('click', onClick);
-        document.getElementById('modal_close').addEventListener('click', offClick);
-    };
-</script>
