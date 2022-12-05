@@ -1,4 +1,5 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
+@import url("https://use.fontawesome.com/releases/v6.2.1/css/all.css");
 * {
     box-sizing: border-box;
 }
@@ -37,6 +38,12 @@ body {
   top: 78px;
   left: 0px;
   overflow: hidden;
+}
+.home_button {
+  color: rgba(98,108,195,1);
+  position: absolute;
+  top: 25px;
+  left: 687px;
 }
 .choose1 {
   width: 145px;
