@@ -1,11 +1,18 @@
 const { app, BrowserWindow, ipcMain } = require('electron');
 const path = require('path');
 
+ipcMain.on('Pay',(event, arg) => {
+    console.log(arg);
+})
+
 const createWindow = () => {
     const win = new BrowserWindow({
         width: 800,
         height: 480,
-        webPreferences: { preload: path.join(__dirname, 'preload.js') }
+        webPreferences: {
+                        nodeIntegration: true,
+                        contextIsolation: false
+                    }
     });
 
     win.loadFile('index.html');
