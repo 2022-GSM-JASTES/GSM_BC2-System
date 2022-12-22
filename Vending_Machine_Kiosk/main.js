@@ -3,6 +3,11 @@ const path = require('path');
 
 ipcMain.on('Pay',(event, arg) => {
     console.log(arg);
+    let exec = require('child_process').exec
+
+    exec('python ./system/tag.py', (err,out,stderr) => {
+        console.log(out);
+    })
 })
 
 const createWindow = () => {
