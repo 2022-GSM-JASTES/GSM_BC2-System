@@ -329,3 +329,52 @@ body {
   left: 473px;
   color: white;
 }
+.NFC_logo {
+  width: 188px;
+  height: 103px;
+  background: url("../image/nfc.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 117px;
+  left: 322px;
+  overflow: hidden;
+}
+.tag_text {
+  width: 227px;
+  color: rgba(94,88,88,1);
+  position: absolute;
+  top: 235px;
+  left: 287px;
+  font-family: Pretendard;
+  font-weight: SemiBold;
+  font-size: 17px;
+  opacity: 1;
+  text-align: left;
+}
+.tag_ready_text {
+  width: 114px;
+  color: rgba(98,108,195,1);
+  position: absolute;
+  top: 316px;
+  left: 343px;
+  font-family: Pretendard;
+  font-weight: SemiBold;
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+}
+.tag_reload_text {
+  width: 144px;
+  color: rgba(200,58,58,1);
+  position: absolute;
+  top: 316px;
+  left: 328px;
+  font-family: Pretendard;
+  font-weight: SemiBold;
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+}
