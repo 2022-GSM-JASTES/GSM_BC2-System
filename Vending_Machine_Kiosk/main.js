@@ -6,8 +6,9 @@ ipcMain.on('Pay',(event, arg) => {
     let exec = require('child_process').exec
 
     exec('python ./system/tag.py', (err,out,stderr) => {
-        console.log(out);
+        event.sender.send('res', out);
     })
+
 })
 
 const createWindow = () => {
