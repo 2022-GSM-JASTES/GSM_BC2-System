@@ -378,3 +378,57 @@ body {
   opacity: 1;
   text-align: left;
 }
+.no_money_text {
+  width: 149px;
+  color: rgba(200,58,58,1);
+  position: absolute;
+  top: 288px;
+  left: 324px;
+  font-family: Pretendard;
+  font-weight: SemiBold;
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+}
+.no_money_icon {
+  width: 100px;
+  height: 100px;
+  background: rgba(98,108,195,1);
+  opacity: 1;
+  position: absolute;
+  top: 150px;
+  left: 349px;
+}
+.pay_success_text {
+  width: 74px;
+  color: rgba(120,230,118,1);
+  position: absolute;
+  top: 316px;
+  left: 363px;
+  font-family: Pretendard;
+  font-weight: SemiBold;
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+}
+.thank_text {
+  width: 171px;
+  color: rgba(94,88,88,1);
+  position: absolute;
+  top: 235px;
+  left: 315px;
+  font-family: Pretendard;
+  font-weight: SemiBold;
+  font-size: 17px;
+  opacity: 1;
+  text-align: left;
+}
+.pay_success_logo {
+  width: 100px;
+  height: 100px;
+  background: rgba(98,108,195,1);
+  opacity: 1;
+  position: absolute;
+  top: 117px;
+  left: 350px;
+}
