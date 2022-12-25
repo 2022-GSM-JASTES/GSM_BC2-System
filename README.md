@@ -5,5 +5,5 @@ Vending Machine System Code Repository 😎
 ---
 ✨ FrameWork : Electron   
 ✨ Language : HTML, CSS, JS   
-✨ DevEnv : Raspberry PI 4
+✨ DevEnv : Raspberry PI 4   
 ✨ NFC_Module : PN532
