@@ -10,8 +10,20 @@ ipcMain.on('Pay',(event, arg) => {
 
         if(out != 'error' && price > money.account) //잔액 부족 로직
             event.sender.send('res', 'no money');
-        else
+        else{
+            let account = money.account - price;
+
+            let block = {
+                'id' : money.email,
+                'money' : account,
+                'menu' : arg.menu,
+                'price' : price,
+                'quantity' : arg.cnt
+            };
+
+            console.log(block);
             event.sender.send('res', out);
+        }
     })
 
 })
