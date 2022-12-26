@@ -4,8 +4,14 @@ const exec = require('child_process').exec;
 ipcMain.on('Pay',(event, arg) => {
     console.log(arg);
     exec('python ./system/tag.py', (err,out,stderr) => {
-        console.log(out);
-        event.sender.send('res', out);
+        out = out.replace(/\n/g, ""); //개행문자 제거
+        let price = parseInt(arg.price.replace(",","").replace("₩","")); //원화 표시 제거
+        let money = JSON.parse(out);
+
+        if(out != 'error' && price > money.account) //잔액 부족 로직
+            event.sender.send('res', 'no money');
+        else
+            event.sender.send('res', out);
     })
 
 })
