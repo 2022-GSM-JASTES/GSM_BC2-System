@@ -1,5 +1,11 @@
 const { ipcRenderer } = require('electron');
 
+let menu;
+
+function get_Name(e) {
+    menu = document.getElementsByClassName(e.getAttribute('class'))[0].getAttribute('class');
+}
+
 window.onload = function() {
     function totalPrice(){
         let cnt = document.getElementById('cnt').innerText;
@@ -9,6 +15,7 @@ window.onload = function() {
 
         document.getElementById('total_price').innerText = "₩" + total_price; 
     }
+
     document.getElementById('plus').addEventListener('click',() => {
         const cnt = document.getElementById('cnt');
 
@@ -55,13 +62,14 @@ window.onload = function() {
         document.querySelector('.NFC_ready').style.display = 'block';
 
         let PayInfo = {'price' : document.getElementById('total_price').innerText,
-                        'cnt' : document.getElementById('cnt').innerText};
+                        'cnt' : document.getElementById('cnt').innerText,
+                        'menu' : menu};
 
         ipcRenderer.send('Pay', PayInfo);
         ipcRenderer.on('res', (event, arg) => {
             console.log(arg);
 
-            if(arg == 'error\n'){ //태그 오류
+            if(arg == 'error'){ //태그 오류
                 document.querySelector('.NFC_ready').style.display = 'none';
                 document.querySelector('.NFC_reload').style.display = 'block';
                 setTimeout(() => {
