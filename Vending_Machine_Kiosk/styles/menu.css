@@ -367,11 +367,11 @@ body {
   text-align: left;
 }
 .tag_reload_text {
-  width: 144px;
+  width: 320px;
   color: rgba(200,58,58,1);
   position: absolute;
   top: 316px;
-  left: 328px;
+  left: 250px;
   font-family: Pretendard;
   font-weight: SemiBold;
   font-size: 20px;
