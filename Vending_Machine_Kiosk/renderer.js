@@ -49,6 +49,10 @@ window.onload = function() {
     document.getElementById('buy').addEventListener('click', () => {
         let PayInfo = {'price' : document.getElementById('total_price').innerText,
                         'cnt' : document.getElementById('cnt').innerText};
+
         ipcRenderer.send('Pay', PayInfo);
+        ipcRenderer.on('res', (event, arg) => {
+            console.log(arg)
+        })
     })
 };
