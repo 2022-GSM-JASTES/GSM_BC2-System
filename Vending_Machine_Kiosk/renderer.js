@@ -4,6 +4,18 @@ let menu;
 
 function get_Name(e) {
     menu = document.getElementsByClassName(e.getAttribute('class'))[0].getAttribute('class');
+    switch (menu) {
+        case "케이준:눈을 감자":
+            document.querySelector('.modal_snack').style.background = 'url("./image/케이준 눈을감자.jpeg") center center / cover';
+            break;
+        case "아폴로":
+            document.querySelector('.modal_snack').style.background = 'url("./image/아폴로 과자.jpeg") center center / cover';
+            break;
+        case "츄파춥스 사워 크롤러":
+            document.querySelector('.modal_snack').style.background = 'url("./image/츄파춥스 크롤러.jpeg") center center / cover';
+        default:
+            break;
+    }
 }
 
 window.onload = function() {
@@ -50,6 +62,7 @@ window.onload = function() {
         document.querySelector('.modal_frame').style.display = 'block';
         document.getElementById('frame').style.background = 'rgba(177,177,177,1)';
         document.getElementById('cnt').innerText = 1; //reset Cnt
+        document.getElementById('snack_name').innerText = menu;
         totalPrice();
     });
     document.getElementById('modal_close').addEventListener('click', () => {
