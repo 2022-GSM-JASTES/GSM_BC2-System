@@ -1,5 +1,8 @@
 const { app, BrowserWindow, ipcMain } = require('electron');
 const exec = require('child_process').exec;
+//import fetch from 'node-fetch'
+const fetch = require('electron-fetch').default;
+//import axios from 'axios'
 
 ipcMain.on('Pay',(event, arg) => {
     console.log(arg);
@@ -13,13 +16,25 @@ ipcMain.on('Pay',(event, arg) => {
         else{
             let account = money.account - price;
 
-            let block = {
-                'email' : money.email,
-                'balance' : account,
-                'menu' : arg.menu,
-                'price' : price,
-                'quantity' : arg.cnt
+            const block = {
+                "email" : money.email,
+                "balance" : account,
+                "menu" : arg.menu,
+                "price" : price,
+                "quantity" : Number(arg.cnt)
             };
+
+            const data = {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'text/event-stream'
+              },
+              //body: block
+              body: `{"email" : "${money.email}","balance" : ${account},"menu" : "${arg.menu}","price" : ${price},"quantity" : ${arg.cnt}}`
+            };
+            console.log(data)
+            fetch('http://10.82.20.0:3000/send', data);
 
             console.log(block);
             event.sender.send('res', out);
