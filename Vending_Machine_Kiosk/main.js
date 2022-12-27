@@ -15,7 +15,7 @@ ipcMain.on('Pay',(event, arg) => {
 
             let block = {
                 'email' : money.email,
-                'money' : account,
+                'balance' : account,
                 'menu' : arg.menu,
                 'price' : price,
                 'quantity' : arg.cnt
