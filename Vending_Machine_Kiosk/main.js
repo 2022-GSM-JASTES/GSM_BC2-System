@@ -38,6 +38,24 @@ ipcMain.on('Pay',(event, arg) => {
 
             console.log(block);
             event.sender.send('res', out);
+
+            let menuNo;
+
+            switch (arg.menu) {
+                case '케이준:눈을 감자':
+                    menuNo = 1;
+                    break;
+                case '아폴로':
+                    menuNo = 2;
+                    break;
+                case '츄파춥스 사워 크롤러':
+                    menuNo = 3;
+                    break;
+                default:
+                    break;
+            }
+
+            exec('python ./system/servo.py ' + menuNo + ' ' + arg.cnt);
         }
     })
 
