@@ -7,13 +7,16 @@ const fetch = require('electron-fetch').default;
 ipcMain.on('Pay',(event, arg) => {
     console.log(arg);
     exec('python ./system/tag.py', (err,out,stderr) => {
-        out = out.replace(/\n/g, ""); //개행문자 제거
-        let price = parseInt(arg.price.replace(",","").replace("₩","")); //원화 표시 제거
-        let money = JSON.parse(out);
+        out = out.replace(/\n/g, ""); //개행문자 제거            
 
-        if(out != 'error' && price > money.account) //잔액 부족 로직
+        if(out == 'error')
+            event.sender.send('res', 'error')
+        else if(out != 'error' && price > money.account) //잔액 부족 로직
             event.sender.send('res', 'no money');
         else{
+            let price = parseInt(arg.price.replace(",","").replace("₩","")); //원화 표시 제거
+            let money = JSON.parse(out);
+
             let account = money.account - price;
 
             const block = {
