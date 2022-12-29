@@ -7,9 +7,9 @@ quantity = int(sys.argv[2])
 
 GPIO.setmode(GPIO.BCM)
 
-servo1 = 12
-servo2 = 7
-servo3 = 16
+servo1 = 26
+servo2 = 20
+servo3 = 21
 
 def push(PIN_no, cnt):
     if(PIN_no == 1):
